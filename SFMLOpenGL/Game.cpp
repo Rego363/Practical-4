@@ -98,10 +98,10 @@ void Game::update()
 			rotationAngle -= 360.0f;
 		}
 	}
-	//glLoadIdentity();
-	//glRotatef(rotationAngle, 0.0f, 0.0f, 1.0f);
-	//glTranslatef(.001f, 0.0f, 0.0f);
-	//glScalef(1.0f, 1.0f, 1.0f);
+	glLoadIdentity();
+	glRotatef(rotationAngle, 0.0f, 0.0f, 1.0f);
+	glTranslatef(.001f, 0.0f, 0.0f);
+	glScalef(1.0f, 1.0f, 1.0f);
 	cout << "Update up" << endl;
 }
 
